@@ -10,7 +10,7 @@
 
 ### Installation
 1. Clone the repository
-   1. `git clone <repository-url>`
+   1. `git clone https://github.com/Yasir326/Hugg.git`
    2. `cd hugg-technical-task`
 
 

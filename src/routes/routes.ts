@@ -25,19 +25,24 @@ export async function routes(fastify: FastifyInstance) {
     reply.code(200).send({ message: 'Welcome to Yasir\'s implementation of Hugg Technical Task 👋🏼 🚀🚀', 
       routes: [
         {
+          method: 'POST',
+          path: '/login',
+          description: 'Login to the API to get a token to use the other routes 🔐'
+        },
+        {
           method: 'GET',
           path: '/api/brands/:id/products',
-          description: 'Get products for a brand'
+          description: 'Get products for a brand ⌚️'
         },
         {
           method: 'GET',
           path: '/api/products/:id/stores',
-          description: 'Get stores for a product'
+          description: 'Get stores for a product 🛍️'
         },
         {
           method: 'GET',
           path: '/documentation',
-          description: 'Get the documentation'
+          description: 'Get the documentation 📚'
         },
       ]
     });

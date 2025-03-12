@@ -47,10 +47,11 @@ To run the test suite:
 A Postman collection is included in this repository to help you test the API endpoints.
 
 **Importing the Collection**
-1. Open Postman
-2. Click on "Import" in the top left corner
-3. Select "File" and navigate to `postman_collection/Hugg.postman_collection.json`
-4. Click "Import"
+1. Make sure  the server is running via `npm run dev`
+2. Open Postman
+3. Click on "Import" in the top left corner
+4. Select "File" and navigate to `postman_collection/Hugg.postman_collection.json`
+5. Click "Import"
 
 ### Using the Collection
 The collection includes the following requests:

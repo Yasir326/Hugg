@@ -1,5 +1,6 @@
 import { Type } from '@sinclair/typebox';
 import { ErrorResponseSchema } from './errorSchema';
+import { PaginationSchema } from './paginationSchema';
 
 export const BrandParamsSchema = Type.Object({
   id: Type.String()
@@ -48,12 +49,6 @@ export const ProductSchema = Type.Object({
   open_graph_image_url: Type.String()
 });
 
-export const PaginationSchema = Type.Object({
-  total: Type.Number(),
-  page: Type.Number(),
-  limit: Type.Number(),
-  totalPages: Type.Number()
-});
 
 export const PaginatedProductsResponseSchema = Type.Object({
   data: Type.Array(ProductSchema),

@@ -1,6 +1,7 @@
 import { Type } from '@sinclair/typebox';
 import { ErrorResponseSchema } from './errorSchema';
 import { PaginationQuerySchema } from './brandSchema';
+import { PaginationSchema } from './paginationSchema';
 
 // Product schemas
 export const ProductParamsSchema = Type.Object({
@@ -21,12 +22,6 @@ export const StoreSchema = Type.Object({
   image_url: Type.String()
 });
 
-export const PaginationSchema = Type.Object({
-  total: Type.Number(),
-  page: Type.Number(),
-  limit: Type.Number(),
-  totalPages: Type.Number()
-});
 
 export const PaginatedStoresResponseSchema = Type.Object({
   data: Type.Array(StoreSchema),
